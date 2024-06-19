@@ -39,5 +39,5 @@ jobs:
 
       - name: Run ansible-lint
         shell: bash
-        working-directory: ${{ github.workspace }}
+        working-directory: $GITHUB_WORKSPACE
         run: ansible-lint --offline
